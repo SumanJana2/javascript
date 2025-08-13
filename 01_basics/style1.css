@@ -1,0 +1,106 @@
+* {
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background styling */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Card container */
+.container {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    width: 350px;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 12px;
+    color: #444;
+}
+
+/* Input fields */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 2px solid #ccc; 
+    border-radius: 8px;
+    outline: none;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #66a6ff;
+    box-shadow: 0 0 5px rgba(102,166,255,0.5);
+}
+
+/* Error message */
+.error {
+    color: #e74c3c;
+    font-size: 0.85em;
+    margin-top: 4px;
+}
+
+/* Button */
+button {
+     width: 100%;
+    margin-top: 18px;
+    padding: 12px;
+    background: linear-gradient(135deg, #66a6ff, #89f7fe);
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #5b8dfc, #4ed6e6);
+    transform: scale(1.03);
+}
+
+/* Result display */
+.result {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 1.15em;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Animation for smooth appearance */
+@keyframes fadeIn {
+     from {
+         opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+     }
+}
